@@ -1,6 +1,7 @@
 import re
 from io import BytesIO
 
+import matplotlib
 import matplotlib.pyplot as plt
 from flask import Flask, render_template, redirect, request, send_file
 from matplotlib import style
