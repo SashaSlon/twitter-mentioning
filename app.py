@@ -2,6 +2,8 @@ import re
 from io import BytesIO
 
 import matplotlib
+matplotlib.use('Agg')
+
 import matplotlib.pyplot as plt
 from flask import Flask, render_template, redirect, request, send_file
 from matplotlib import style
@@ -10,7 +12,7 @@ from twitter import MentioningCounter
 
 app = Flask(__name__)
 mentioning_counter = MentioningCounter()
-matplotlib.use('Agg')
+
 
 @app.route('/')
 def index():
