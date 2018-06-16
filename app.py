@@ -9,7 +9,7 @@ from twitter import MentioningCounter
 
 app = Flask(__name__)
 mentioning_counter = MentioningCounter()
-
+matplotlib.use('Agg')
 
 @app.route('/')
 def index():
