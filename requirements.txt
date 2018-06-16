@@ -1,3 +1,4 @@
 Tweepy
 flask
+matplotlib
 gunicorn
