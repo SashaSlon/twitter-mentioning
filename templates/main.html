@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Упоминания слов в Twitter</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="text-center my-5">Упоминания слов в Twitter за полседние 7 дней</h1>
+    <form action="mentioning">
+        <div class="form-row">
+            <div class="form-group col">
+                <label class="sr-only" for="inputWords">Password</label>
+                <input class="form-control form-control-lg" id="inputWords" type="text" name="words"
+                       placeholder="Введите слова через запятую">
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col text-center">
+                <button type="submit" class="btn btn-lg btn-primary mb-2 m-auto">Найти упоминания</button>
+            </div>
+        </div>
+    </form>
+</div>
+</body>
+</html>
